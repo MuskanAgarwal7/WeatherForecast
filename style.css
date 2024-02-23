@@ -1,0 +1,39 @@
+body {
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.container {
+    width: 35rem;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+button {
+    height: 33px;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+#input {
+    height: 33px;
+    width: 20rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+
+}
+
+.weatherItems {
+    font-size: 2rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    height: 13rem;
+}
