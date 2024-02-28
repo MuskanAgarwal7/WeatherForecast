@@ -7,7 +7,7 @@ const country = document.querySelector(".country");
 const text = document.querySelector(".text");
 
 (async () => {
-    let URL = 'https://api.weatherapi.com/v1/current.json?key=4b21ade6922b44ce80791051242102&q=New%20delhi&aqi=no'
+    let URL = 'https://api.weatherapi.com/v1/current.json?key=&q=New%20delhi&aqi=no'
     let response = await fetch(URL);
     let data = await response.json();
     para.innerText = data.current.temp_c;
@@ -16,7 +16,7 @@ const text = document.querySelector(".text");
 
 
 async function weatherApi(city) {
-    let URL = `https://api.weatherapi.com/v1/current.json?key=4b21ade6922b44ce80791051242102&q=${city}&aqi=no`;
+    let URL = `https://api.weatherapi.com/v1/current.json?key=&q=${city}&aqi=no`;
     let response = await fetch(URL);
     let data = await response.json();
     para.innerText = data.current.temp_c;
